@@ -1,0 +1,139 @@
+/* Color scheme */
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #fbbc05;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+  }
+  
+  /* Global styles */
+  body {
+    background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  a {
+    color: var(--primary-color);
+  }
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Header */
+  .jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1623507463929-1d6956e64e6d");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .jumbotron p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Bio */
+  .bio {
+    margin-top: -150px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .bio img {
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .bio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .bio p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  /* Portfolio */
+  .portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio img {
+    margin: 20px;
+    max-width: 100%;
+    transition: transform 0.2s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  }
+  .portfolio img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Contact */
+  .contact {
+    margin: 50px 0;
+    padding: 50px;
+  background-color: #fff;
+box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+border-radius: 10px;
+text-align: center;
+}
+.contact h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.contact p {
+font-size: 1.2rem;
+line-height: 1.5;
+margin-bottom: 0;
+}
+.contact form {
+margin-top: 30px;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: none;
+background-color: #f5f5f5;
+margin-bottom: 20px;
+}
+.contact textarea {
+height: 150px;
+}
+.contact input[type="submit"] {
+background-color: var(--primary-color);
+color: #fff;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+.contact input[type="submit"]:hover {
+background-color: var(--secondary-color);
+}
